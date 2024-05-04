@@ -19,7 +19,7 @@ import { validateFunc } from '../constraints/constraints'
 import useStyles from '../components/Configuration/styles'
 import useGlobalStyles from '../utils/globalStyles'
 import LoginBg from '../assets/img/loginBg.png'
-import LoginPageIcon from '../assets/img/LoginPageIcon.png'
+import LoginPageIcon from '../assets/img/LoginPageicon.png'
 import InputAdornment from '@mui/material/InputAdornment'
 import VisibilityIcon from '@mui/icons-material/Visibility'
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff'
@@ -156,7 +156,7 @@ const Login = props => {
           <img
             src={LoginPageIcon}
             alt="login img"
-            style={{ height: '50%', width: '70%' }}
+            style={{ height: '100%', width: '100%' }}
           />
         </Grid>
         <Grid
@@ -176,7 +176,7 @@ const Login = props => {
             <Box className={classes.flexRow}>
               <Box item className={classes.heading}>
                 <Typography variant="h6" className={classes.text}>
-                  {t('LogintoEnatega')}
+                  {t('Login to Takeaway-Tray!')}
                 </Typography>
               </Box>
             </Box>

@@ -40,11 +40,10 @@ function Sidebar(props) {
   const createLinks = (
     <Box className={classes.sidebarBox}>
       <Toolbar className={[classes.rowDisplay, classes.logo]}>
-        <Logo />
         <Typography
           variant="h2"
           className={[classes.headingText, classes.logoText]}>
-          ENATEGA
+          Takeaway-Tray
         </Typography>
       </Toolbar>
       {restaurantName && restaurantImage ? (

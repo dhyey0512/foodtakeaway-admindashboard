@@ -123,6 +123,7 @@ const SuperAdminDashboard = props => {
         <Grid container mt={2} spacing={2}>
           <Grid item md={8} xs={12}>
             <Box sx={{ bgcolor: 'common.black', borderRadius: 5 }}>
+            <video src="path_to_your_video.mp4" autoPlay loop muted></video>
             </Box>
           </Grid>
         </Grid>

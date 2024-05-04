@@ -91,10 +91,10 @@ const App = () => {
             // Customize notification here
             // const { title, body } = payload.notification
             // eslint-disable-next-line no-restricted-globals
-            var notificationTitle = 'New Order on Enatega Multivendor'
+            var notificationTitle = 'New Order on Takeaway-Tray'
             var notificationOptions = {
               body: payload.data.orderid,
-              icon: 'https://multivendor-admin.ninjascode.com/favicon.png'
+              icon: 'https://multivendor-admin.ninjascode.com/applogo.jpg'
             }
             const nt = new Notification(notificationTitle, notificationOptions)
             nt.onclick = function(event) {
