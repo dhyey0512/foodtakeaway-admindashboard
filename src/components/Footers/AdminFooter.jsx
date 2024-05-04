@@ -18,6 +18,10 @@ function AdminFooter(props) {
   return (
     <Box
       sx={{
+        position: 'fixed',
+        bottom: 0,
+        left: 0,
+        right: 0,
         background: `linear-gradient(237.49deg, ${theme.palette.success.lightest} 0.63%, ${theme.palette.success.darkest} 85.49%)`
       }}
       className={classes.footer}>

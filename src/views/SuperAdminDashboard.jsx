@@ -119,15 +119,14 @@ const SuperAdminDashboard = props => {
   return (
     <>
       <Header />
-      <Container sx={{ ml: 5 }} fluid className={globalClasses.flex}>
-        <Grid container mt={2} spacing={2}>
-          <Grid item md={8} xs={12}>
-            <Box sx={{ bgcolor: 'common.black', borderRadius: 5 }}>
-            <video src="path_to_your_video.mp4" autoPlay loop muted></video>
-            </Box>
+        <Container sx={{ ml: 5 }} fluid className={globalClasses.flex}>
+          <Grid container mt={0} spacing={0} justifyContent="center">
+            <Grid item md={9} >
+              {/* Apply styling to reduce the size of the icon */}
+              <DashboardIcon/>
+            </Grid>
           </Grid>
-        </Grid>
-      </Container>
+        </Container>
     </>
   )
 }
