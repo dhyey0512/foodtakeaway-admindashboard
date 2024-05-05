@@ -51,49 +51,6 @@ const Orders = props => {
     const { data: dataZone } = useQuery(GET_RIDERS_BY_ZONE, {
       variables: { id: row.zone._id }
     })
-    return (
-      <Select
-        id="input-rider"
-        name="input-rider"
-        value=""
-        displayEmpty
-        inputProps={{ 'aria-label': 'Without label' }}
-        style={{ width: '50px' }}
-        className={globalClasses.selectInput}>
-        {dataZone &&
-          dataZone.ridersByZone.map(rider => (
-            <MenuItem
-              style={{ color: 'black' }}
-              onClick={() => {
-                mutateAssign({
-                  variables: {
-                    id: row._id,
-                    riderId: rider._id
-                  },
-                  onCompleted: data => {
-                    console.error('Mutation success data:', data)
-                    NotificationManager.success(
-                      'Successful',
-                      'Rider updated!',
-                      3000
-                    )
-                  },
-                  onError: error => {
-                    console.error('Mutation error:', error)
-                    NotificationManager.error(
-                      'Error',
-                      'Failed to update rider!',
-                      3000
-                    )
-                  }
-                })
-              }}
-              key={rider._id}>
-              {rider.name}
-            </MenuItem>
-          ))}
-      </Select>
-    )
   }
   const {
     data: dataOrders,

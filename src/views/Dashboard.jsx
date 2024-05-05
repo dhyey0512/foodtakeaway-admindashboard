@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 // react plugin used to create charts
 import { Line } from 'react-chartjs-2'
 import stats from '../assets/img/stats.png'
-import RiderStat from '../assets/img/RiderStat.png'
 import {
   Chart as ChartJS,
   CategoryScale,

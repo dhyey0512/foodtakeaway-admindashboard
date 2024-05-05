@@ -54,7 +54,7 @@ function AdminSidebar(props) {
                   {t('MANAGEMENT')}
                 </Typography>
               ) : null}
-             {!['Riders', 'Configuration'].includes(prop.name) ? (
+             {!['Riders', 'Configuration', 'Withdraw Requests'].includes(prop.name) ? (
                 <Link
                   className={[
                     classes.rowDisplay,
